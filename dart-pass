@@ -1,0 +1,59 @@
+// Q1
+
+
+main() {
+ const hour = DateTime.now().hour; //    hour can't be constant, it should be int.
+  print(hour);
+}
+
+
+
+
+
+// Q2
+
+
+abstract class Animal {
+  printName();
+  printSound();
+  
+}
+
+
+class Dog extends Animal{
+  printName() {
+    print ('Dog');
+  }
+  
+  printSound(){
+    print ('Hoof');
+  }
+}
+
+
+class Cat extends Animal{
+  printName() {
+    print ('Cat');
+  }
+  
+  printSound(){
+    print ('Meww');
+  }
+}
+
+
+class Cow extends Animal{
+  printName() {
+    print ('Cow');
+  }
+  
+  printSound(){
+    print ('Moo');
+  }
+}
+
+main() {
+  var x = new Cat();
+  
+  x.printSound();
+}
