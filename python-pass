@@ -1,0 +1,19 @@
+def even_odd(X):
+  
+  X = int (input ('Enter X value: '))
+
+  x = []
+
+  for i in range (0, X):
+    number = input()
+    x.append(number)
+
+  for j in x:
+    if (int(j) % 2 == 0):
+      print (j, 'is even')
+
+    elif (int(j) % 2 == 1):
+      print (j, 'is odd')
+
+ 
+even_odd(X)
